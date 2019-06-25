@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="1" skipped="0" failures="0" errors="0" time="0.983475" timestamp="2019-06-20T12:59:54+05:30" hostname="ip-192-168-2-144.ec2.internal">
-<properties>
-<property name="seed" value="15211"/>
-</properties>
-<testcase classname="spec.integration.home_spec" name="Visit homepage Products" file="./spec/integration/home_spec.rb" time="0.978036"></testcase>
-</testsuite>

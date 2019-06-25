@@ -73,4 +73,18 @@ RSpec.describe 'Products controller specs', type: :request do
     post('/products', params: request_body, as: :json)
     expect(response.status).to eq(400)
   end
+
+  #
+  # It tests if discounted price is less than or equal to retain price
+  #
+  request_body = {
+    id: 4,
+    name: 'Dressing Gown',
+    category: 'Underwear',
+    retail_price: 303.0,
+    discounted_price: 551.49,
+    availability: true
+  }
+  post('/products', params: request_body, as: :json)
+  expect(response.status).to eq(400)
 end
